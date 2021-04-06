@@ -1,4 +1,3 @@
-
 import java.awt.*;
 import java.awt.event.*;
 
@@ -25,8 +24,7 @@ public class Bai11 extends Frame {
     final int HEIGHT = 30, WIDTH = 30, H_SPACE = 10, V_SPACE = 10;
     final int TOPX = 30, TOPY = 50;
 
-    Bai11(String frameText)
-    {
+    Bai11(String frameText) {
         super(frameText);
 
         int tempX = TOPX, y = TOPY;
@@ -229,7 +227,7 @@ class MyOperatorButton extends Button implements ActionListener {
         }
         cl.displayLabel.setText(Bai11.getFormattedText(temp));
     }
-} 
+}
 
 class MyMemoryButton extends Button implements ActionListener {
 
@@ -309,5 +307,5 @@ class MySpecialButton extends Button implements ActionListener {
 
         cl.displayLabel.setText("0");
         cl.setClear = true;
-    } 
+    }
 }

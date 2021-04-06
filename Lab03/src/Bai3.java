@@ -6,10 +6,10 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class Bai3a extends JFrame{
+public class Bai3 extends JFrame{
     
     private static final long serialVersionUID = 1L;
-    public Bai3a(String title) {
+    public Bai3(String title) {
         setTitle(title);
         JPanel pnFlow = new JPanel();
         pnFlow.setLayout (new FlowLayout());
@@ -29,7 +29,7 @@ public class Bai3a extends JFrame{
     }   
     
     public static void main(String[] args) {
-        Bai3a myUI = new Bai3a("Demo FlowLayout");
+        Bai3 myUI = new Bai3("Demo FlowLayout");
         myUI.setSize(600,100);
         myUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         myUI.setLocationRelativeTo(null);

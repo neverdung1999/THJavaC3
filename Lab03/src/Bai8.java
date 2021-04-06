@@ -161,7 +161,6 @@ public class Bai8 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnThoatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThoatActionPerformed
-        // TODO add your handling code here:
         int result = JOptionPane.showConfirmDialog(this, "Ban co chac muon thoat", "Xac nhan", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
         if(result == JOptionPane.YES_OPTION){
             System.exit(0);
@@ -169,7 +168,6 @@ public class Bai8 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnThoatActionPerformed
 
     private void btnXoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXoaActionPerformed
-        // TODO add your handling code here:
         txtA.setText("");
         txtB.setText("");
         txtC.setText("");
@@ -177,7 +175,6 @@ public class Bai8 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnXoaActionPerformed
 
     private void btnGiaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGiaiActionPerformed
-        // TODO add your handling code here:
         int a = Integer.parseInt(txtA.getText());
         int b = Integer.parseInt(txtB.getText());
         int c = Integer.parseInt(txtC.getText());
@@ -199,11 +196,9 @@ public class Bai8 extends javax.swing.JFrame {
                 }
                 return;
             }
-            // tính delta
             float delta = b * b - 4 * a * c;
             float x1;
             float x2;
-            // tính nghiệm
             if (delta > 0) {
                 x1 = (float) ((-b + Math.sqrt(delta)) / (2 * a));
                 x2 = (float) ((-b - Math.sqrt(delta)) / (2 * a));

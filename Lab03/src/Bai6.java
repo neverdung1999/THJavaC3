@@ -1,4 +1,3 @@
-
 import javax.swing.JOptionPane;
 
 public class Bai6 extends javax.swing.JFrame {
@@ -28,20 +27,20 @@ public class Bai6 extends javax.swing.JFrame {
         jLabel1.setText("Số thứ nhất");
 
         Nhan.setText("x");
-        Nhan.setName("btnMulti"); // NOI18N
+        Nhan.setName("btnMulti"); 
         Nhan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NhanActionPerformed(evt);
             }
         });
-        jTextField1.setName("txtFirst"); // NOI18N
-        jTextField2.setName("txtSecond"); // NOI18N
+        jTextField1.setName("txtFirst"); 
+        jTextField2.setName("txtSecond"); 
         jLabel2.setText("Số thứ hai");
         jTextField3.setEnabled(false);
-        jTextField3.setName("txtResult"); // NOI18N
+        jTextField3.setName("txtResult"); 
         jLabel3.setText("Kết quả");
         Chia.setText("/");
-        Chia.setName("btnDiv"); // NOI18N
+        Chia.setName("btnDiv"); 
         Chia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ChiaActionPerformed(evt);
@@ -128,7 +127,7 @@ public class Bai6 extends javax.swing.JFrame {
         pack();
     }
 
-    private void ChiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChiaActionPerformed
+    private void ChiaActionPerformed(java.awt.event.ActionEvent evt) {
         if (jTextField1.getText().equals("")) {
             JOptionPane.showMessageDialog(this, "Moi nhap So thu 1");
             return;
@@ -150,7 +149,7 @@ public class Bai6 extends javax.swing.JFrame {
 
     }
 
-    private void CongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CongActionPerformed
+    private void CongActionPerformed(java.awt.event.ActionEvent evt) {
         if (jTextField1.getText().equals("")) {
             JOptionPane.showMessageDialog(this, "Moi nhap So thu 1");
             return;
@@ -165,7 +164,7 @@ public class Bai6 extends javax.swing.JFrame {
         jTextField3.setText(Float.toString(result));
     }
 
-    private void TruActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TruActionPerformed
+    private void TruActionPerformed(java.awt.event.ActionEvent evt) {
         if (jTextField1.getText().equals("")) {
             JOptionPane.showMessageDialog(this, "Moi nhap So thu 1");
             return;
@@ -180,7 +179,7 @@ public class Bai6 extends javax.swing.JFrame {
         jTextField3.setText(Float.toString(result));
     }
 
-    private void NhanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NhanActionPerformed
+    private void NhanActionPerformed(java.awt.event.ActionEvent evt) {
         if (jTextField1.getText().equals("")) {
             JOptionPane.showMessageDialog(this, "Moi nhap So thu 1");
             return;
@@ -198,7 +197,6 @@ public class Bai6 extends javax.swing.JFrame {
 
     public static void main(String args[]) {
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Bai6().setVisible(true);
@@ -206,7 +204,6 @@ public class Bai6 extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Chia;
     private javax.swing.JButton Cong;
     private javax.swing.JButton Nhan;
@@ -218,5 +215,4 @@ public class Bai6 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
-    // End of variables declaration//GEN-END:variables
 }
