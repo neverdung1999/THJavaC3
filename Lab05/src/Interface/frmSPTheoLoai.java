@@ -39,7 +39,7 @@ public class frmSPTheoLoai extends javax.swing.JFrame {
 
     public final void ShowData(String ml) {
         ResultSet result = null;
-        result = sp.ShowSPTheoloai
+        result = sp.ShowSPTheoloai(ml);
         try {
             ClearData();
             while (result.next()) {
